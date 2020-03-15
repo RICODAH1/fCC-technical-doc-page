@@ -1,0 +1,78 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>fCC Technical Documentation Page</title>
+</head>
+<nav id="navbar">
+  <header>CSS Documentation</header>
+  <img src="https://i1.wp.com/gafish.fr/wp-content/uploads/2013/03/Logo_CSS3.png?ssl=1" alt="CSS3 Logo">
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li><a class="nav-link" href="#Resources">Resources</a></li>
+    <li><a class="nav-link"href="#Before_We_Begin">Before We Begin</a></li>
+    <li><a class="nav-link" href="#CSS_Basics">CSS Basics</a></li>
+    <li><a class="nav-link" href="#CSS">CSS</a></li>
+  </ul>
+</nav>
+<!-- All sources provided by MDN.org -->
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
+      <p>CSS is one of the core languages of the open Web and is standardized across Web browsers according to the W3C specification. Developed in levels, CSS1 is now obsolete, CSS2.1 is a recommendation, and CSS3, now split into smaller modules, is progressing on the standardization track.</p>
+    </article>
+  </section>
+  <hr>
+  <section class="main-section" id="Resources">
+    <header>Resources</header>
+    <article>
+      <p>The following bulletpoints will provide links to great assets in learning CSS. They are aquired from the many polls taken on twitter developer communities. Also from my personal experience currently learning web dev.</p>
+      <ul>
+        <li><a href="https://www.freecodecamp.org/" title="freeCodeCamp - Best Free Online Learning Platform">freeCodeCamp</a> - A fantastic and free online learning resource, no coincidence it is first on the list!</li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" title="MDN Docs - Best Documentation for CSS">MDN Docs</a></li>
+        <li><a href="https://www.youtube.com/" title="YouTube - Video Hosting Platform">YouTube</a></li>        
+        <li><a href="https://www.udemy.com/" title="Udemy - Awesome Courses at Great Prices">Udemy</a></li>
+        <li><a href="https://stackoverflow.com/" title="Stack Overflow - Fixes All Your Issues">Stack Overflow</a></li>
+      </ul>
+      <p>There are many, many more resources than the five listed above. These were the top off the top of my head, hands down best to start with. In my experience using multiple sources together is the best approach.</p>
+    </article>
+  </section>
+  <hr>
+  <section class="main-section" id="Before_We_Begin">
+    <header>Before We Begin</header>
+    <article>
+      <p>CSS stands for Cascading Style Sheets, and that first word cascading is incredibly important to understand — the way that the cascade behaves is key to understanding CSS.</p>
+      <p>At some point, you will be working on a project and you will find that the CSS you thought should be applied to an element is not working. Usually the problem is that you have created two rules which could potentially apply to the same element. The cascade, and the closely-related concept of specificity, are mechanisms that control which rule applies when there is such a conflict. Which rule is styling your element may not be the one you expect, so you need to understand how these mechanisms work.</p>
+    </article>
+  </section>
+  <hr>
+  <section class="main-section" id="CSS_Basics">
+    <header>CSS Basics</header>
+    <article>
+      <p>To target all paragraphs in the document you would use the selector p. To turn all paragraphs green you would use:</p>
+      <code>p {color: green;}</code>
+      <p>You can target multiple selectors at once, by separating the selectors with a comma. If I want all paragraphs and all list items to be green my rule looks like this:</p>
+      <code>p, li {color: green;}</code>
+      <p>You can alter an html element using a CSS rule to change the way it looks.  A good example is our ul, an unordered list. It has list bullets, and if I decide I don't want those bullets I can remove them like so:</p>
+      <code>li {list-style-type: none;}</code>
+      <p>In your CSS you can target the class of special by creating a selector that starts with a full stop character. Add the following to your CSS file:</p>
+      <code>.special {color: orange;font-weight: bold;}</code>
+      <p>Sometimes you will see rules with a selector that lists the HTML element selector along with the class:</p>
+      <code>li.special {color: orange;font-weight: bold;}</code>
+    </article>
+  </section>
+  <hr>
+  <section class="main-section" id="CSS">
+    <header>CSS</header>
+    <article>
+      <p>If you are working with a team on an existing project, the first thing to check is whether the project has an existing style guide for CSS. The team style guide should always win over your own personal preferences. There often isn't a right or wrong way to do things, but consistency is important.</p>
+      <p>If you get to set the rules for the project or are working alone, then the most important thing to do is to keep things consistent. Consistency can be applied in all sorts of ways, such as using the same naming conventions for classes, choosing one method of describing color, or maintaining consistent formatting (for example will you use tabs or spaces to indent your code? If spaces, how many spaces?)</p>
+      <p>Adding comments to your CSS will help any future developer work with your CSS file, but will also help you when you come back to the project after a break.</p>
+      <code>/* This is a CSS comment it can be broken onto multiple lines if needed. */</code>
+    </article>
+  </section>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
+</main>
